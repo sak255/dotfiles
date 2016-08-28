@@ -1,0 +1,5 @@
+[user]
+	name = @
+	email = @
+[alias]
+	lograph = log --graph --decorate --oneline

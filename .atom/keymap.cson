@@ -1,0 +1,13 @@
+'atom-workspace atom-text-editor':
+  'ctrl-y': 'core:paste'
+  'alt-%': 'find-and-replace:show'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'ctrl-alt-/': 'core:redo'
+  'ctrl-g ctrl-/': 'core:redo'
+  'ctrl-c ctrl-c': 'editor:toggle-line-comments'
+
+'atom-workspace atom-text-editor .find-and-replace':
+  'tab': 'find-and-replace:show-replace'
+  'ctrl-n': 'find-and-replace:show-replace'
+  'ctrl-p': 'find-and-replace:show'

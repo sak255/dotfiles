@@ -1,0 +1,19 @@
+"*":
+  "atomic-emacs":
+    alwaysUseKillRing: true
+  core:
+    projectHome: "~/"
+    telemetryConsent: "no"
+  "disable-keybindings":
+    allBundledPackages: true
+  editor:
+    fontFamily: "\"Source Han Code JP\""
+    fontSize: 12
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  "file-icons":
+    onChanges: true
+  welcome:
+    showOnStartup: false

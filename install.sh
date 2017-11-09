@@ -1,11 +1,20 @@
-#!/bin/sh
+#!/bin/sh -x
 
-dotfiles=`dirname $0`
+dotfiles=$(cd $(dirname $0) && pwd)
 
-cd ~/
-ln -sf $dotfiles/.gitconfig
-ln -sf $dotfiles/.config
-ln -sf $dotfiles/.atom
+# Link git settings.
+rm ~/.gitconfig
+ln -sf $dotfiles/.gitconfig ~/.gitconfig
+mkdir -p ~/.config/git
+rm ~/.config/git/ignore
+ln -sf $dotfiles/.config/git/ignore ~/.config/git/ignore
 
-cd $dotfiles/.atom/
-apm install --packages-file packages.txt
+# Link atom settings.
+mkdir -p ~/.atom
+rm ~/.atom/config.cson
+ln -sf $dotfiles/.atom/config.cson ~/.atom/config.cson
+rm ~/.atom/keymap.cson
+ln -sf $dotfiles/.atom/keymap.cson ~/.atom/keymap.cson
+
+# Install atom packages.
+apm install --packages-file $dotfiles/.atom/packages.txt

@@ -1,9 +1,8 @@
-atomic-emacs
+clipboard-plus
+emacs-plus
 disable-keybindings
 file-icons
-git-log
 git-plus
 japanese-menu
-language-lua
 minimap
 platformio-ide-terminal

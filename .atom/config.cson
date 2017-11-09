@@ -1,11 +1,12 @@
 "*":
-  "atomic-emacs":
-    alwaysUseKillRing: true
   core:
     projectHome: "~/"
     telemetryConsent: "no"
   "disable-keybindings":
     allBundledPackages: true
+    prefixKeys: [
+      "ctrl-k"
+    ]
   editor:
     fontFamily: "\"Source Han Code JP\""
     fontSize: 12
@@ -13,7 +14,12 @@
     showInvisibles: true
     softWrap: true
     tabLength: 4
+  "exception-reporting":
+    userId: "00000000-0000-0000-0000-000000000000"
   "file-icons":
     onChanges: true
+  "platformio-ide-terminal":
+    toggles:
+      autoClose: true
   welcome:
     showOnStartup: false

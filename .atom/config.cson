@@ -8,7 +8,7 @@
       "ctrl-k"
     ]
   editor:
-    fontFamily: "\"Source Han Code JP\""
+    fontFamily: "Source Han Code JP"
     fontSize: 12
     showIndentGuide: true
     showInvisibles: true

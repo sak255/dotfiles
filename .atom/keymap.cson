@@ -14,12 +14,3 @@
 'atom-workspace atom-text-editor:not([mini])':
   'ctrl-c ctrl-c': 'editor:toggle-line-comments'
   'alt-%': 'find-and-replace:show'
-
-'.find-and-replace':
-  'tab': 'find-and-replace:focus-next'
-  'shif-tab': 'find-and-replace:focus-previous'
-  'ctrl-n': 'find-and-replace:show-replace'
-  'ctrl-p': 'find-and-replace:show'
-
-'.find-and-replace .replace-container':
-  'ctrl-enter': 'find-and-replace:replace-all'

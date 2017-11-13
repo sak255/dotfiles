@@ -2,19 +2,19 @@
 
 set dotfiles=%~dp0
 
-: Link git settings.
-del %home%\.gitconfig
-mklink %home%\.gitconfig %dotfiles%\.gitconfig
+: Copy git settings.
+del /f %home%\.gitconfig
+copy %dotfiles%\.gitconfig %home%\.gitconfig
 mkdir %home%\.config\git
-del %home%\.config\git\ignore
-mklink %home%\.config\git\ignore %dotfiles%\.config\git\ignore
+del /f %home%\git\ignore
+copy %dotfiles%\.config\git\ignore %home%\.config\git\ignore
 
-: Link atom settings.
+: Copy atom settings.
 mkdir %home%\.atom
-del %home%\.atom\config.cson
-mklink %home%\.atom\config.cson %dotfiles%\.atom\config.cson
-del %home%\.atom\keymap.cson
-mklink %home%\.atom\keymap.cson %dotfiles%\.atom\keymap.cson
+del /f %home%\.atom\config.cson
+copy %dotfiles%\.atom\config.cson %home%\.atom\config.cson
+del /f %home%\.atom\keymap.cson
+copy %dotfiles%\.atom\keymap.cson %home%\.atom\keymap.cson
 
 : Install atom packages.
 apm install --packages-file %dotfiles%\.atom\packages.txt

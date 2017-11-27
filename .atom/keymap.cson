@@ -1,16 +1,17 @@
 'atom-workspace atom-text-editor':
   'ctrl-y': 'core:paste'
-  'ctrl-alt-y': 'clipboard-plus:toggle'
   'ctrl-/': 'core:undo'
   'ctrl-g ctrl-/': 'core:redo'
-  'ctrl-alt-/': 'core:redo'
-  'ctrl-alt-shift-a': 'core:select-all'
-  'ctrl-alt-shift-s': 'core:save'
-  'ctrl-alt-shift-z': 'core:undo'
-  'ctrl-alt-shift-x': 'core:cut'
-  'ctrl-alt-shift-c': 'core:copy'
-  'ctrl-alt-shift-v': 'core:paste'
+  'ctrl-shift-a': 'core:select-all'
+  'ctrl-shift-s': 'core:save'
+  'ctrl-shift-z': 'core:undo'
+  'ctrl-shift-x': 'core:cut'
+  'ctrl-shift-c': 'core:copy'
+  'ctrl-shift-v': 'core:paste'
 
 'atom-workspace atom-text-editor:not([mini])':
   'ctrl-c ctrl-c': 'editor:toggle-line-comments'
   'alt-%': 'find-and-replace:show'
+
+'atom-workspace .find-and-replace':
+  'alt-%': 'find-and-replace:show-replace'

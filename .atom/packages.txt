@@ -1,4 +1,4 @@
-clipboard-plus
+advanced-open-file
 emacs-plus
 disable-keybindings
 file-icons
@@ -6,3 +6,4 @@ git-plus
 japanese-menu
 minimap
 platformio-ide-terminal
+project-manager

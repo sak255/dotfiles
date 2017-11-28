@@ -1,4 +1,5 @@
 advanced-open-file
+clipboard-plus
 emacs-plus
 disable-keybindings
 file-icons

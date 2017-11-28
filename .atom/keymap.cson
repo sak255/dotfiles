@@ -1,7 +1,5 @@
-'atom-workspace atom-text-editor':
-  'ctrl-y': 'core:paste'
-  'ctrl-/': 'core:undo'
-  'ctrl-g ctrl-/': 'core:redo'
+# Mac cmd key command for Windows with AutoHotKey.
+'atom-text-editor':
   'ctrl-shift-a': 'core:select-all'
   'ctrl-shift-s': 'core:save'
   'ctrl-shift-z': 'core:undo'
@@ -9,9 +7,14 @@
   'ctrl-shift-c': 'core:copy'
   'ctrl-shift-v': 'core:paste'
 
-'atom-workspace atom-text-editor:not([mini])':
+# Emacs keymap completion for emacs-plus, clipboard-plus.
+'atom-text-editor:not([mini])':
+  'ctrl-/': 'core:undo'
+  'ctrl-g ctrl-/': 'core:redo'
   'ctrl-c ctrl-c': 'editor:toggle-line-comments'
   'alt-%': 'find-and-replace:show'
+  'alt-y': 'clipboard-plus:toggle'
 
+# Focus to replace box from find box.
 'atom-workspace .find-and-replace':
   'alt-%': 'find-and-replace:show-replace'

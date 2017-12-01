@@ -1,11 +1,14 @@
-# Mac cmd key command for Windows with AutoHotKey.
+# Mac command key for Windows with AutoHotKey.
 'atom-text-editor':
-  'ctrl-shift-a': 'core:select-all'
-  'ctrl-shift-s': 'core:save'
-  'ctrl-shift-z': 'core:undo'
-  'ctrl-shift-x': 'core:cut'
-  'ctrl-shift-c': 'core:copy'
-  'ctrl-shift-v': 'core:paste'
+  'ctrl-alt-q': 'application:quit'
+  'ctrl-alt-w': 'core:close'
+  'ctrl-alt-y': 'core:redo'
+  'ctrl-alt-a': 'core:select-all'
+  'ctrl-alt-s': 'core:save'
+  'ctrl-alt-z': 'core:undo'
+  'ctrl-alt-x': 'core:cut'
+  'ctrl-alt-c': 'core:copy'
+  'ctrl-alt-v': 'core:paste'
 
 # Emacs keymap completion for emacs-plus, clipboard-plus.
 'atom-text-editor:not([mini])':

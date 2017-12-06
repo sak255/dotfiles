@@ -6,7 +6,7 @@ set dotfiles=%~dp0
 del /f %home%\.gitconfig
 copy %dotfiles%\.gitconfig %home%\.gitconfig
 mkdir %home%\.config\git
-del /f %home%\git\ignore
+del /f %home%\.config\git\ignore
 copy %dotfiles%\.config\git\ignore %home%\.config\git\ignore
 
 : Copy atom settings.

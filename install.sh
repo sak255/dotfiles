@@ -6,7 +6,7 @@ dotfiles=$(cd $(dirname $0) && pwd)
 rm -f ~/.gitconfig
 cp $dotfiles/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/git
-rm -f ~/git/ignore
+rm -f ~/.config/git/ignore
 cp $dotfiles/.config/git/ignore ~/.config/git/ignore
 
 # Copy atom settings.

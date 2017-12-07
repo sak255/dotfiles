@@ -15,6 +15,7 @@
   'ctrl-/': 'core:undo'
   'ctrl-g ctrl-/': 'core:redo'
   'ctrl-c ctrl-c': 'editor:toggle-line-comments'
+  'alt-g alt-g': 'go-to-line:toggle'
   'alt-%': 'find-and-replace:show'
   'alt-y': 'clipboard-plus:toggle'
 
